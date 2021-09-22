@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        h2 {
+            color: lime;
+        }
+
+        .Wuhu {
+            color: magenta;
+        }
+
+        .Wuhu2 {
+            color: mediumslateblue;
+        }
+
+        .Godmorgen {
+            color: navy;
+        }
+
+        /* Body styling */
+        body {
+            background-color: plum;
+        }
+
+        /* Bruges til classes */
+
+        .primary-heading {
+            color: red;
+        }
+
+        /* Bruges til ID */
+        #Velkommen {
+            background-color: powderblue;
+        }
+
+        #om {
+            color: white;
+        }
+
+        /* Hvis man sætter komma, inkluderer man begge id'er */
+        #Velkommen,#om {
+            border: 1px solid coral;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Nestedselectors */
+        #Velkommen p {
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="Overskrift">Velkommen</h2>
+    <div class="Wuhu">
+        <p>Godmorgen</p>
+        <p>Jeg vil hjem</p>
+    </div>
+    <div class="Wuhu2">
+        <p>Jeg er træt</p>
+        <p class="Godmorgen">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure omnis quia, ducimus voluptas
+            id praesentium est totam assumenda voluptatibus optio?</p>
+    </div>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus libero <span class="Wuhu"> Godmorgen, i
+                dag bliver en god dag.</span> hic inventore facere minus obcaecati repudiandae nam <span
+                style="color: palegreen;">Solen skinner yay</span> eveniet deleniti totam?</p>
+    </div>
+
+    <div id="Velkommen">
+        <h2 class="primary-heading">Velkommen</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, natus?</p>
+    </div>
+    <div id="om">
+        <h2>Om</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, nostrum.</p>
+    </div>
+
+
+</body>
+
+</html>
